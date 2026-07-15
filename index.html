@@ -1,80 +1,768 @@
-<!DOCTYPE html>
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>박치헌 포트폴리오</title><link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet"><style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:'Pretendard',sans-serif;background:#000;color:#fff;font-size:12px;line-height:1.6}a{text-decoration:none;color:inherit}::selection{background:#fff;color:#000}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:18px 5%;background:rgba(0,0,0,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}.nl{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.nk{display:flex;gap:32px}.nk a{font-size:10px;color:rgba(255,255,255,.35);letter-spacing:.06em;text-transform:uppercase;transition:color .3s}.nk a:hover{color:#fff}.nb{background:#fff;color:#000;font-size:10px;padding:8px 20px;border:none;cursor:pointer;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:opacity .2s}.nb:hover{opacity:.8}
-.hb{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:4px;background:none;border:none}.hb span{display:block;width:16px;height:1.5px;background:#fff;transition:all .3s}.hb.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}.hb.open span:nth-child(2){opacity:0}.hb.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}.mm{display:none;position:fixed;inset:0;background:#000;z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:24px}.mm.open{display:flex}.mm a{font-size:16px;color:rgba(255,255,255,.5);font-weight:500}
-.hero{position:relative;height:100svh;min-height:560px;display:flex;align-items:flex-end;overflow:hidden;padding:0 5% clamp(60px,10vh,120px)}.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.18;pointer-events:none}.ho{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.5) 50%,#000)}.hc{position:relative;z-index:2;max-width:820px}
-.hbd{font-size:9px;color:rgba(255,255,255,.3);letter-spacing:.22em;text-transform:uppercase;margin-bottom:clamp(14px,2.5vh,24px);display:block;animation:fu .7s ease both}h1{font-size:clamp(36px,7vw,72px);font-weight:900;line-height:.98;letter-spacing:-2.5px;margin-bottom:clamp(14px,2vh,22px);animation:fu .7s .1s ease both}h1 em{font-style:normal;display:block;color:rgba(255,255,255,.45)}.hdsc{font-size:clamp(12px,1.4vw,14px);color:rgba(255,255,255,.35);line-height:1.85;max-width:440px;margin-bottom:clamp(20px,3.5vh,36px);animation:fu .7s .2s ease both}.hbt{display:flex;gap:10px;animation:fu .7s .3s ease both}
-.bp{background:#fff;color:#000;padding:12px 28px;border:none;cursor:pointer;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:opacity .2s}.bp:hover{opacity:.8}.bs{color:rgba(255,255,255,.35);padding:12px 28px;border:1px solid rgba(255,255,255,.1);background:none;cursor:pointer;font-size:10px;letter-spacing:.06em;text-transform:uppercase;transition:all .3s}.bs:hover{border-color:rgba(255,255,255,.3);color:#fff}
-.sec{padding:clamp(72px,13vh,130px) 5%;max-width:1180px;margin:0 auto}.stg{font-size:8px;color:rgba(255,255,255,.22);font-weight:700;letter-spacing:.28em;text-transform:uppercase;margin-bottom:10px}.stt{font-size:clamp(22px,4vw,34px);font-weight:800;margin-bottom:clamp(28px,5vh,52px);letter-spacing:-1.5px;line-height:1.05}.dv{height:1px;background:rgba(255,255,255,.05);max-width:1180px;margin:0 auto}.rv{opacity:0;transform:translateY(20px);transition:opacity .65s,transform .65s}.rv.vis{opacity:1;transform:translateY(0)}
-.ftr{display:flex;gap:6px;margin-bottom:clamp(20px,3.5vh,36px);flex-wrap:wrap}.ftb{font-size:9px;padding:6px 16px;border:1px solid rgba(255,255,255,.07);background:none;color:rgba(255,255,255,.3);cursor:pointer;transition:all .2s;font-family:inherit;letter-spacing:.05em;text-transform:uppercase}.ftb.on{background:#fff;color:#000;border-color:#fff}
-.pg{columns:3;column-gap:14px}.pg.sm{columns:4;column-gap:10px}.vc{background:#0a0a0a;border:1px solid rgba(255,255,255,.05);overflow:hidden;cursor:pointer;transition:border-color .3s,transform .4s;break-inside:avoid;margin-bottom:14px;display:inline-block;width:100%}.vc.lg .th.ls{aspect-ratio:4/3}.vc:hover{border-color:rgba(255,255,255,.14);transform:translateY(-3px)}.th{position:relative;overflow:hidden;background:#111}.th.ls{aspect-ratio:16/9}.th.pt{aspect-ratio:9/16}.th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s,filter .5s;filter:grayscale(.35)}.vc:hover .th img{transform:scale(1.03);filter:grayscale(0)}.tho{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}.vc:hover .tho{opacity:1}.tho span{font-size:11px;color:#fff;font-weight:700}.vi2{padding:clamp(9px,1.3vw,14px)}.vt2{font-size:11px;font-weight:600;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.vc2{font-size:8px;color:rgba(255,255,255,.25);margin-top:3px;letter-spacing:.06em;text-transform:uppercase}
-.prg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.05)}.pk{background:#000;padding:clamp(26px,3vw,42px);display:flex;flex-direction:column;transition:background .3s}.pk:hover{background:#0a0a0a}.pk.pop{background:#0a0a0a}.poptag{font-size:7px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:14px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.08)}.pkn{font-size:13px;font-weight:700;margin-bottom:6px}.pkp{font-size:26px;font-weight:900;letter-spacing:-1px;margin-bottom:2px}.pku{font-size:10px;color:rgba(255,255,255,.28);margin-bottom:20px}.pkl{height:1px;background:rgba(255,255,255,.05);margin-bottom:18px}.pkf{list-style:none;flex:1;display:flex;flex-direction:column;gap:8px}.pkf li{font-size:11px;color:rgba(255,255,255,.38);display:flex;gap:7px}.pkf li::before{content:'—';color:rgba(255,255,255,.12)}.pkb{width:100%;margin-top:20px;padding:11px;border:1px solid rgba(255,255,255,.07);background:none;color:rgba(255,255,255,.35);font-size:10px;cursor:pointer;font-family:inherit;letter-spacing:.05em;text-transform:uppercase;transition:all .3s}.pkb:hover{border-color:rgba(255,255,255,.3);color:#fff}.pkb.fill{background:#fff;color:#000;border-color:#fff}
-.ctb{border:1px solid rgba(255,255,255,.05);padding:clamp(36px,6vw,72px);text-align:center}.ctb h3{font-size:clamp(18px,3vw,28px);font-weight:800;letter-spacing:-1px;margin-bottom:10px}.ctb p{font-size:13px;color:rgba(255,255,255,.35);margin-bottom:28px;line-height:1.8}.cta2{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.bk{background:#fee500;color:#3c1e1e;padding:12px 28px;border:none;font-size:11px;cursor:pointer;font-weight:700;transition:opacity .2s}.bk:hover{opacity:.9}.be{background:#fff;color:#000;padding:12px 28px;border:none;font-size:11px;cursor:pointer;font-weight:600;transition:opacity .2s}.be:hover{opacity:.8}
-footer{padding:20px 5%;border-top:1px solid rgba(255,255,255,.05);text-align:center;font-size:9px;color:rgba(255,255,255,.18)}
-@keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}@media(max-width:768px){.nk,.nb{display:none}.hb{display:flex}.pg{columns:2}.pg.sm{columns:3}.prg{grid-template-columns:1fr}}@media(max-width:480px){.cta2{flex-direction:column;align-items:center}}</style><style id="ed-custom">
-/* 에디터 커스텀 스타일 */
-body{background:#000 !important;color:#f2f2f2 !important;font-family:'Pretendard',sans-serif !important;line-height:1.6 !important}
-nav{background:#000 !important;color:#f2f2f2 !important;border-bottom:1px solid #1c1c1c !important}
-.nl{color:#ffffff !important;font-family:'Pretendard',sans-serif !important}
-.nk a{color:#8a8a8a !important}
-.nb{background:#ffffff !important;color:#000 !important}
-.ho{background:linear-gradient(180deg,transparent,#000 88%) !important}
-.hv{opacity:.45 !important}
-.hbd{color:#ffffff !important;font-family:'Pretendard',sans-serif !important}
-.hc h1{color:#fff !important;font-family:'Pretendard',sans-serif !important;font-size:60px !important}
-.hc h1 em{color:#ffffff !important}
-.hdsc{color:#8a8a8a !important}
-.bp{background:#ffffff !important;color:#000 !important}
-.bs{color:#f2f2f2 !important;border-color:#2a2a2a !important}
-.stg{color:#ffffff !important;font-family:'Pretendard',sans-serif !important}
-.stt{color:#fff !important;font-family:'Pretendard',sans-serif !important;letter-spacing:-1.5px !important}
-.ftb{color:#8a8a8a !important;border-color:#2a2a2a !important}
-.ftb.on{background:#ffffff !important;color:#000 !important;border-color:#ffffff !important}
-.vc{background:#0c0c0c !important;border:1px solid #1a1a1a !important;border-radius:4px !important}
-.vt2{color:#f2f2f2 !important;font-family:'Pretendard',sans-serif !important}
-.vc2{color:#ffffff !important}
-.th img{filter:grayscale(.4) !important}
-.prg{background:transparent !important}
-.pk{background:#0c0c0c !important;border:1px solid #161616 !important}
-.pkn{color:#fff !important;font-family:'Pretendard',sans-serif !important}
-.pkp{color:#ffffff !important;font-family:'Pretendard',sans-serif !important}
-.pku{color:#8a8a8a !important}
-.pkf li{color:#8a8a8a !important}
-.pkb{color:#f2f2f2 !important;border-color:#2a2a2a !important}
-.pkb.fill{background:#ffffff !important;color:#000 !important;border-color:#ffffff !important}
-.ctb h3{color:#fff !important;font-family:'Pretendard',sans-serif !important}
-.ctb p{color:#8a8a8a !important}
-.bk{background:#ffffff !important;color:#000 !important}
-footer{background:#000 !important;color:#8a8a8a !important;font-family:'Pretendard',sans-serif !important;border-top:1px solid #1c1c1c !important}
-</style><link id="ed-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&amp;family=Black+Han+Sans&amp;family=Gothic+A1:wght@300;400;700;900&amp;family=Jua&amp;family=Do+Hyeon&amp;family=Nanum+Gothic:wght@400;700;800&amp;family=Nanum+Myeongjo:wght@400;700;800&amp;family=Gowun+Dodum&amp;family=Song+Myung&amp;family=Hahmlet:wght@300;400;700;900&amp;family=Nanum+Pen+Script&amp;family=Gugi&amp;family=IBM+Plex+Sans+KR:wght@300;400;500;700&amp;family=Montserrat:wght@300;400;600;800&amp;family=Poppins:wght@300;400;600;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;family=Playfair+Display:wght@400;700;900&amp;family=Bebas+Neue&amp;display=swap"></head><body><div class="mm" id="mm"><a href="https://pcheon9696.github.io/#portfolio" onclick="cM()">Portfolio</a><a href="https://pcheon9696.github.io/#pricing" onclick="cM()">Service</a><a href="https://pcheon9696.github.io/#contact" onclick="cM()">Contact</a></div><nav style="transform: translate(60px, 0px); position: relative;"><div class="nl">박치헌</div><div class="nk"><a href="https://pcheon9696.github.io/#portfolio">Portfolio</a><a href="https://pcheon9696.github.io/#pricing">Service</a></div><button class="nb" onclick="sTo('contact')">의뢰하기</button><button class="hb" id="hbtn" onclick="tM()"><span></span><span></span><span></span></button></nav><section class="hero"><video class="hv" autoplay="" muted="" loop="" playsinline="" style="opacity:1"><source src="https://res.cloudinary.com/dsihni53n/video/upload/%ED%8F%AC%ED%8F%B4_%EB%B0%B1_l0wech.mp4" type="video/mp4"></video><div class="ho"></div><div class="hc"><span class="hbd"></span><h1>영상 제작자<em>박치헌</em></h1><p class="hdsc">유튜브 콘텐츠 · B2B 교육 영상 31편 · 밴드 라이브 시리즈 · 숏폼 기획<br>기획부터 최종 납품까지, 빠르고 정확한 원스톱 제작.</p><div class="hbt"><button class="bp" onclick="sTo('portfolio')">작업물 보기</button><button class="bs" onclick="sTo('pricing')">서비스 안내</button></div></div></section><div class="dv"></div><div class="sec rv" id="portfolio"><div class="stg">Portfolio</div><div class="stt">작업물</div><div class="ftr"><button class="ftb on" data-cat="all">전체</button><button class="ftb" data-cat="youtube">유튜브</button><button class="ftb" data-cat="pr">홍보</button><button class="ftb" data-cat="lecture">강의</button><button class="ftb" data-cat="shorts">숏츠</button></div><div id="pg" class="pg"><div class="vc lg" onclick="window.open('https://www.youtube.com/watch?v=r_94zBPR0qU','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault.jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">Number One - Bankai / 블리치 OST / Band Cover By Dosio</div><div class="vc2">유튜브</div></div></div><div class="vc lg" onclick="window.open('https://www.youtube.com/watch?v=FEsH7DMxro4','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(1).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">B2B 마케팅 교육 영상 31편</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc lg" onclick="window.open('https://youtu.be/mUO9dahc6H4','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(2).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">AI와 함께 일하는 법, Claude Cowork로 시작하십시오.</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/watch?v=mp8e2UBhqO0','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(3).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">게임스토리 요약하기 [다크소울]</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://youtu.be/c25pVN3qHi8','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(4).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/hQ_kcmHYoNw','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(5).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">800억원을 아낀 만원짜리 아이디어</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://youtu.be/i6Qa6d2Jlzc','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(6).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">Drop - 미나미 美波 / 밴드 커버 By Dosio</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://youtu.be/LFJO4QHHc_4','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(7).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">몽환 - MY FIRST STORY x Hyde / 귀멸의 칼날 OP / 밴드 커버</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://youtu.be/4v2YyKGBCcM','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(8).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">영화인듯 영화아닌 영화같은 광고 리뷰</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://youtu.be/gnAzFUbF574','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(9).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">Re: Re: - 아시안 쿵푸 제너레이션 / 밴드 커버 By Dosio</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://youtu.be/NGq1oz5PUzk','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(10).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">주술회전 2기 OP - 푸르름이 사는 곳 / Band Cover By Dosio</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/watch?v=LqQIxuT-E88','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(11).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/watch?v=ZqAlakwcD_A','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(12).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">게임스토리 요약하기 [엘든링]</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/watch?v=jZaAHcE_hik','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(13).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">B2B마케팅 | 나눔캠퍼스 온라인 강의</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://youtu.be/GyJso2K2upY','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(14).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/watch?v=wFDLRLagsck','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(15).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/watch?v=VKYpceGnvtg','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(16).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙</div><div class="vc2">유튜브</div></div></div><div class="vc" onclick="window.open('https://youtu.be/V_l4qCgY7OA','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(17).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">박치헌_경제롱폼</div><div class="vc2">경제/강의</div></div></div><div class="vc" onclick="window.open('https://youtu.be/TTU17vFbM2E','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(18).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">박치헌_30분롱폼_수학강의</div><div class="vc2">경제/강의</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/arm5oq2zGNk','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(19).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">40분동안 파리만 잡았던 진짜 이유</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/n2Iy9KXwuog','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(20).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">톰 크루즈 스턴트 중 가장 평가절하된 장면</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/mx5nvdaTeLI','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(21).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">시그니엘보다 저렴한 토니 스타크의 집</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/00J9c2HU2yI','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(22).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">모피어스 선글라스가 벗겨지지 않았던 진짜 이유</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/y3t1w3OJkyo','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(23).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">역대급 충격적인 영화의 다른결말</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/-jkEsbLNUXg','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(24).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">[허진명프로] EP09. 슬라이스 원인 연습</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://www.youtube.com/shorts/HhebzEC_sf4','_blank')"><div class="th pt"><img src="./박치헌 포트폴리오_files/hqdefault(25).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">[허진명프로] EP05. 다운스윙 공간 만들기</div><div class="vc2">숏츠</div></div></div><div class="vc" onclick="window.open('https://youtu.be/cY8wyWTSuVA','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(26).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">Innoix 2</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://youtu.be/0SWfvbEaXGA','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(27).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">Innorix 2</div><div class="vc2">홍보/인터뷰</div></div></div><div class="vc" onclick="window.open('https://youtu.be/dJKt6cc0_cs','_blank')"><div class="th ls"><img src="./박치헌 포트폴리오_files/hqdefault(28).jpg" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">쿠팡 농산물 위탁판매가 운이 아니라는걸 증명하기 위해 14일간 수익을 벌어봤습니다(극현실주의)</div><div class="vc2">유튜브</div></div></div></div></div><div class="dv"></div><div class="sec rv" id="pricing"><div class="stg">Service</div><div class="stt">편집 패키지</div><div class="prg"><div class="pk"><div class="pkn">초 간단 편집</div><div class="pkp">10,000원~</div><div class="pku">/ 분 당</div><div class="pkl"></div><ul class="pkf"><li>기본적인 컷편집</li><li>자막 삽입</li><li>10분 이상 단순 편집 시 할인 가능</li></ul><button class="pkb" onclick="sTo('contact')">문의하기</button></div><div class="pk pop"><div class="poptag">POPULAR</div><div class="pkn">스탠다드 편집</div><div class="pkp">15,000원~</div><div class="pku">/ 분 당</div><div class="pkl"></div><ul class="pkf"><li>컷편집 + BGM/효과음 믹싱</li><li>디자인 예능 자막</li><li>썸네일 제작 포함</li><li>중간 확인 + 수정 2회 무료</li></ul><button class="pkb fill" onclick="sTo('contact')">문의하기</button></div><div class="pk"><div class="pkn">숏폼</div><div class="pkp">20,000원~</div><div class="pku">/ 편 당</div><div class="pkl"></div><ul class="pkf"><li>쇼츠/릴스/틱톡 최적화</li><li>세로형 포맷 제작</li><li>롱폼 → 숏폼 추출 시 할인</li></ul><button class="pkb" onclick="sTo('contact')">문의하기</button></div></div></div><div class="dv"></div><div class="sec rv" id="contact"><div class="ctb"><h3>영상이 필요하신가요?</h3><p>유튜브 콘텐츠, 기업 홍보, 교육 영상, 숏폼까지 모두 가능합니다.<br>카카오톡으로 간단히 문의 주시면 24시간 내 견적을 보내드립니다.</p><div class="cta2"><a class="bk" href="https://open.kakao.com/o/sXCETsqi" target="_blank">카카오톡 문의</a><a class="be" href="mailto:clgjsdl12@gmail.com">이메일 보내기</a></div></div></div><footer>© 2026 박치헌 — 영상 기획 · 촬영 · 편집 · 연출</footer><script>
-function tM(){var m=document.getElementById("mm"),b=document.getElementById("hbtn");if(m){m.classList.toggle("open");if(b)b.classList.toggle("open");document.body.style.overflow=m.classList.contains("open")?"hidden":"";}}function cM(){var m=document.getElementById("mm");if(m)m.classList.remove("open");var b=document.getElementById("hbtn");if(b)b.classList.remove("open");document.body.style.overflow="";}var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add("vis");});},{threshold:.08});document.querySelectorAll(".rv").forEach(function(el){obs.observe(el);});function vid(u){var m=u.match(/(?:youtu\.be\/|shorts\/|[?&]v=)([\w-]+)/);return m?m[1]:"";}function thb(u){return"https://i.ytimg.com/vi/"+vid(u)+"/hqdefault.jpg";}function sTo(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:"smooth"});}var cl={youtube:"유튜브",pr:"홍보/인터뷰",lecture:"경제/강의",shorts:"숏츠"};var vids=[{url:"https://www.youtube.com/watch?v=r_94zBPR0qU",title:"Number One - Bankai / 블리치 OST / Band Cover By Dosio",cat:"youtube"},
-{url:"https://www.youtube.com/watch?v=FEsH7DMxro4",title:"B2B 마케팅 교육 영상 31편",cat:"pr"},
-{url:"https://youtu.be/mUO9dahc6H4",title:"AI와 함께 일하는 법, Claude Cowork로 시작하십시오.",cat:"pr"},
-{url:"https://www.youtube.com/watch?v=mp8e2UBhqO0",title:"게임스토리 요약하기 [다크소울]",cat:"youtube"},
-{url:"https://youtu.be/c25pVN3qHi8",title:"[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰",cat:"pr"},
-{url:"https://www.youtube.com/shorts/hQ_kcmHYoNw",title:"800억원을 아낀 만원짜리 아이디어",cat:"shorts"},
-{url:"https://youtu.be/i6Qa6d2Jlzc",title:"Drop - 미나미 美波 / 밴드 커버 By Dosio",cat:"youtube"},
-{url:"https://youtu.be/LFJO4QHHc_4",title:"몽환 - MY FIRST STORY x Hyde / 귀멸의 칼날 OP / 밴드 커버",cat:"youtube"},
-{url:"https://youtu.be/4v2YyKGBCcM",title:"영화인듯 영화아닌 영화같은 광고 리뷰",cat:"pr"},
-{url:"https://youtu.be/gnAzFUbF574",title:"Re: Re: - 아시안 쿵푸 제너레이션 / 밴드 커버 By Dosio",cat:"youtube"},
-{url:"https://youtu.be/NGq1oz5PUzk",title:"주술회전 2기 OP - 푸르름이 사는 곳 / Band Cover By Dosio",cat:"youtube"},
-{url:"https://www.youtube.com/watch?v=LqQIxuT-E88",title:"오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio",cat:"youtube"},
-{url:"https://www.youtube.com/watch?v=ZqAlakwcD_A",title:"게임스토리 요약하기 [엘든링]",cat:"youtube"},
-{url:"https://www.youtube.com/watch?v=jZaAHcE_hik",title:"B2B마케팅 | 나눔캠퍼스 온라인 강의",cat:"pr"},
-{url:"https://youtu.be/GyJso2K2upY",title:"[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰",cat:"pr"},
-{url:"https://www.youtube.com/watch?v=wFDLRLagsck",title:"[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유",cat:"youtube"},
-{url:"https://www.youtube.com/watch?v=VKYpceGnvtg",title:"[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙",cat:"youtube"},
-{url:"https://youtu.be/V_l4qCgY7OA",title:"박치헌_경제롱폼",cat:"lecture"},
-{url:"https://youtu.be/TTU17vFbM2E",title:"박치헌_30분롱폼_수학강의",cat:"lecture"},
-{url:"https://www.youtube.com/shorts/arm5oq2zGNk",title:"40분동안 파리만 잡았던 진짜 이유",cat:"shorts"},
-{url:"https://www.youtube.com/shorts/n2Iy9KXwuog",title:"톰 크루즈 스턴트 중 가장 평가절하된 장면",cat:"shorts"},
-{url:"https://www.youtube.com/shorts/mx5nvdaTeLI",title:"시그니엘보다 저렴한 토니 스타크의 집",cat:"shorts"},
-{url:"https://www.youtube.com/shorts/00J9c2HU2yI",title:"모피어스 선글라스가 벗겨지지 않았던 진짜 이유",cat:"shorts"},
-{url:"https://www.youtube.com/shorts/y3t1w3OJkyo",title:"역대급 충격적인 영화의 다른결말",cat:"shorts"},
-{url:"https://www.youtube.com/shorts/-jkEsbLNUXg",title:"[허진명프로] EP09. 슬라이스 원인 연습",cat:"shorts"},
-{url:"https://www.youtube.com/shorts/HhebzEC_sf4",title:"[허진명프로] EP05. 다운스윙 공간 만들기",cat:"shorts"},
-{url:"https://youtu.be/cY8wyWTSuVA",title:"Innoix 2",cat:"pr"},
-{url:"https://youtu.be/0SWfvbEaXGA",title:"Innorix 2",cat:"pr"},
-{url:"https://youtu.be/dJKt6cc0_cs",title:"쿠팡 농산물 위탁판매가 운이 아니라는걸 증명하기 위해 14일간 수익을 벌어봤습니다(극현실주의)",cat:"youtube"}].map(function(v){return{title:"",cat:"youtube",...v};});function lt(){return Promise.all(vids.map(function(v){if(v.title)return;var id=vid(v.url);if(!id)return;return fetch("https://noembed.com/embed?url=https://www.youtube.com/watch?v="+id).then(function(r){return r.json();}).then(function(d){v.title=d.title||"";}).catch(function(){});}));}function rn(cat){var g=document.getElementById("pg");if(!g)return;var isS=cat==="shorts";var list=cat==="all"?vids:vids.filter(function(v){return v.cat===cat;});g.className="pg"+(isS?" sm":"");g.innerHTML=list.map(function(v,i){var isSh=v.cat==="shorts";var sz="";if(!isSh&&i<3)sz=" lg";return '<div class="vc'+sz+'" onclick="window.open(\''+v.url+'\',\'_blank\')"><div class="th'+(isSh?" pt":" ls")+'"><img src="'+thb(v.url)+'" loading="lazy"><div class="tho"><span>▶</span></div></div><div class="vi2"><div class="vt2">'+(v.title||"loading...")+'</div><div class="vc2">'+(cl[v.cat]||v.cat)+'</div></div></div>';}).join("");}document.querySelectorAll(".ftb").forEach(function(t){t.addEventListener("click",function(){document.querySelectorAll(".ftb").forEach(function(b){b.classList.remove("on");});t.classList.add("on");rn(t.dataset.cat);});});rn("all");lt().then(function(){rn((document.querySelector(".ftb.on")||{dataset:{cat:"all"}}).dataset.cat);});
-</script>
-</body></html>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>박치헌 | 영상 편집 포트폴리오</title><meta name="description" content="편집자 박치헌의 영상 포트폴리오. 브랜드, 유튜브, 교육, 라이브, 숏폼 작업을 소개합니다."><meta property="og:title" content="박치헌 | 영상 편집 포트폴리오"><meta property="og:description" content="브랜드부터 유튜브, 교육, 라이브, 숏폼까지. 편집자 박치헌의 대표 작업을 만나보세요."><meta property="og:type" content="website"><meta property="og:image" content="og.png"><style>:root {
+  --background: #070809;
+  --surface: #111315;
+  --foreground: #f5f4ef;
+  --muted: rgba(245, 244, 239, 0.62);
+  --line: rgba(245, 244, 239, 0.16);
+  --signal: #ff624d;
+  --cool: #9acbd0;
+  --paper: #eff0ed;
+  --ink: #101214;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    "Noto Sans KR",
+    "Malgun Gothic",
+    Arial,
+    sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body::selection {
+  background: var(--signal);
+  color: #080808;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  align-items: flex-end;
+  display: flex;
+  min-height: 92svh;
+  overflow: hidden;
+  padding: 28px 64px 76px;
+  position: relative;
+}
+
+.showreel {
+  inset: 0;
+  opacity: 0.64;
+  pointer-events: none;
+  position: absolute;
+}
+
+.showreel video {
+  filter: brightness(0.76) contrast(1.08) saturate(0.88);
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+}
+
+.veil {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 8, 9, 0.7) 0%,
+      rgba(7, 8, 9, 0.35) 38%,
+      rgba(7, 8, 9, 0.04) 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(7, 8, 9, 0.34) 0%,
+      rgba(7, 8, 9, 0.04) 46%,
+      rgba(7, 8, 9, 0.88) 100%
+    );
+  inset: 0;
+  position: absolute;
+}
+
+.nav {
+  align-items: center;
+  color: rgba(245, 244, 239, 0.78);
+  display: flex;
+  font-size: 12px;
+  font-weight: 650;
+  justify-content: space-between;
+  left: 0;
+  padding: 28px 64px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.brand {
+  color: var(--foreground);
+}
+
+.navLinks {
+  display: flex;
+  gap: 28px;
+}
+
+.nav a,
+.heroLink {
+  transition: color 180ms ease;
+}
+
+.nav a:hover,
+.heroLink:hover {
+  color: var(--signal);
+}
+
+.heroCopy {
+  max-width: 720px;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  color: var(--cool);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0;
+  margin: 0 0 20px;
+}
+
+h1,
+h2 {
+  letter-spacing: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 104px;
+  font-weight: 820;
+  line-height: 0.94;
+}
+
+.heroDescription {
+  color: rgba(245, 244, 239, 0.76);
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 24px 0 30px;
+  max-width: 520px;
+}
+
+.heroLink {
+  align-items: center;
+  border-bottom: 1px solid rgba(245, 244, 239, 0.58);
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 22px;
+  padding: 0 0 8px;
+}
+
+.heroLink span {
+  color: var(--signal);
+}
+
+.reelStatus {
+  align-items: center;
+  bottom: 38px;
+  color: rgba(245, 244, 239, 0.68);
+  display: flex;
+  font-size: 10px;
+  font-weight: 700;
+  gap: 9px;
+  position: absolute;
+  right: 64px;
+  z-index: 2;
+}
+
+.statusDot {
+  background: var(--signal);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 98, 77, 0.16);
+  height: 7px;
+  width: 7px;
+}
+
+.statement {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 80px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+  padding: 104px 64px;
+}
+
+.statement p {
+  margin: 0;
+}
+
+.statementLead {
+  font-size: 44px;
+  font-weight: 720;
+  line-height: 1.28;
+}
+
+.statementSide {
+  align-self: end;
+}
+
+.statementSide > p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 440px;
+}
+
+.capabilities {
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+  margin-top: 30px;
+  padding-top: 18px;
+}
+
+.capabilities span {
+  color: rgba(245, 244, 239, 0.8);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.featured {
+  padding: 112px 64px 128px;
+}
+
+.sectionHead {
+  align-items: end;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.5fr);
+  margin-bottom: 56px;
+}
+
+h2 {
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sectionNote {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 4px;
+  max-width: 380px;
+}
+
+.featuredGrid {
+  align-items: start;
+  display: grid;
+  gap: 60px 18px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.feature {
+  display: block;
+  grid-column: span 4;
+  min-width: 0;
+}
+
+.feature-1 {
+  grid-column: span 7;
+}
+
+.feature-2 {
+  grid-column: span 5;
+  padding-top: 92px;
+}
+
+.featureMedia {
+  aspect-ratio: 16 / 10;
+  background: var(--surface);
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.featureMedia::after,
+.thumb::after {
+  background: linear-gradient(180deg, transparent 55%, rgba(0, 0, 0, 0.46));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.featureMedia img,
+.thumb img {
+  filter: saturate(0.9) contrast(1.02);
+  height: 100%;
+  object-fit: cover;
+  transition:
+    filter 260ms ease,
+    transform 360ms ease;
+  width: 100%;
+}
+
+.feature:hover .featureMedia img,
+.card:hover .thumb img {
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.025);
+}
+
+.featureIndex,
+.cardIndex {
+  background: rgba(7, 8, 9, 0.86);
+  color: var(--foreground);
+  font-size: 10px;
+  font-weight: 750;
+  left: 12px;
+  line-height: 24px;
+  min-width: 28px;
+  padding: 0 7px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  z-index: 1;
+}
+
+.watchLabel {
+  bottom: 14px;
+  color: var(--foreground);
+  font-size: 10px;
+  font-weight: 750;
+  opacity: 0;
+  position: absolute;
+  right: 14px;
+  transform: translateY(5px);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+  z-index: 1;
+}
+
+.feature:hover .watchLabel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featureMeta {
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+}
+
+.featureMeta > span {
+  color: var(--cool);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.featureMeta strong {
+  color: rgba(245, 244, 239, 0.92);
+  font-size: 19px;
+  font-weight: 680;
+  line-height: 1.45;
+}
+
+.work {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 112px 64px 124px;
+}
+
+.archiveHead {
+  margin-bottom: 46px;
+}
+
+.work .eyebrow {
+  color: #b63322;
+}
+
+.work .sectionNote {
+  color: rgba(16, 18, 20, 0.62);
+}
+
+.filterBar {
+  align-items: center;
+  border-bottom: 1px solid rgba(16, 18, 20, 0.3);
+  border-top: 1px solid rgba(16, 18, 20, 0.3);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  min-height: 58px;
+}
+
+.filters {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+
+.filters button {
+  background: transparent;
+  border: 0;
+  color: rgba(16, 18, 20, 0.58);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  min-height: 42px;
+  padding: 0 14px;
+  position: relative;
+}
+
+.filters button::after {
+  background: var(--signal);
+  bottom: -8px;
+  content: "";
+  height: 2px;
+  left: 14px;
+  opacity: 0;
+  position: absolute;
+  right: 14px;
+  transform: scaleX(0.3);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.filters button:hover,
+.filters button.active {
+  color: var(--ink);
+}
+
+.filters button.active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.resultCount {
+  color: rgba(16, 18, 20, 0.52);
+  font-size: 10px;
+  font-weight: 750;
+  padding-left: 18px;
+  white-space: nowrap;
+}
+
+.grid {
+  display: grid;
+  gap: 0 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  border-bottom: 1px solid rgba(16, 18, 20, 0.2);
+  display: grid;
+  min-width: 0;
+  padding: 24px 0 30px;
+}
+
+.thumb {
+  aspect-ratio: 16 / 10;
+  background: #d9dbd7;
+  border-radius: 2px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  min-height: 154px;
+  padding-top: 16px;
+}
+
+.metaTop {
+  color: rgba(16, 18, 20, 0.54);
+  display: flex;
+  font-size: 10px;
+  font-weight: 700;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.meta strong {
+  display: -webkit-box;
+  font-size: 16px;
+  font-weight: 720;
+  line-height: 1.5;
+  margin-top: 12px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.cardAction {
+  color: #b63322;
+  font-size: 11px;
+  font-weight: 750;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+footer {
+  align-items: flex-end;
+  background: var(--background);
+  color: rgba(245, 244, 239, 0.52);
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  padding: 58px 64px 34px;
+}
+
+footer div {
+  display: grid;
+  gap: 7px;
+}
+
+footer strong {
+  color: var(--foreground);
+  font-size: 16px;
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .nav,
+  .statement,
+  .featured,
+  .work,
+  footer {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .reelStatus {
+    right: 38px;
+  }
+
+  h1 {
+    font-size: 84px;
+  }
+
+  .statementLead {
+    font-size: 36px;
+  }
+
+  .feature-2 {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero {
+    min-height: 90svh;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 54px;
+  }
+
+  .statement,
+  .sectionHead {
+    gap: 34px;
+    grid-template-columns: 1fr;
+  }
+
+  .statementSide {
+    align-self: start;
+  }
+
+  .feature,
+  .feature-1,
+  .feature-2 {
+    grid-column: span 6;
+    padding-top: 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filterBar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0 12px;
+  }
+
+  .filters {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .filters button {
+    flex: 0 0 auto;
+  }
+
+  .filters button::after {
+    bottom: 0;
+  }
+
+  .resultCount {
+    padding-left: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero,
+  .nav,
+  .statement,
+  .featured,
+  .work,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    min-height: 88svh;
+    padding-bottom: 56px;
+  }
+
+  .nav {
+    padding-top: 22px;
+  }
+
+  .navLinks {
+    gap: 16px;
+  }
+
+  .navLinks a:first-child {
+    display: none;
+  }
+
+  .showreel video {
+    object-position: 58% center;
+  }
+
+  .veil {
+    background:
+      linear-gradient(90deg, rgba(7, 8, 9, 0.58), rgba(7, 8, 9, 0.08)),
+      linear-gradient(
+        180deg,
+        rgba(7, 8, 9, 0.34),
+        rgba(7, 8, 9, 0.05) 38%,
+        rgba(7, 8, 9, 0.92)
+      );
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+
+  .heroDescription {
+    font-size: 15px;
+    max-width: 340px;
+  }
+
+  .reelStatus {
+    display: none;
+  }
+
+  .statement,
+  .featured,
+  .work {
+    padding-bottom: 82px;
+    padding-top: 82px;
+  }
+
+  .statementLead {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  .sectionHead {
+    margin-bottom: 38px;
+  }
+
+  .featuredGrid {
+    gap: 44px;
+  }
+
+  .feature,
+  .feature-1,
+  .feature-2 {
+    grid-column: span 12;
+  }
+
+  .featureMeta strong {
+    font-size: 17px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .meta {
+    min-height: 142px;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .featureMedia img,
+  .thumb img,
+  .watchLabel,
+  .filters button::after,
+  .nav a,
+  .heroLink {
+    transition: none;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 4px;
+}
+</style></head><body><main><section class="hero" id="top" aria-label="박치헌 영상 포트폴리오 소개"><div class="showreel" aria-hidden="true">
+<video autoplay muted loop playsinline preload="metadata"><source src="https://res.cloudinary.com/dsihni53n/video/upload/c_limit,w_1920/q_auto:good/f_auto/%ED%8F%AC%ED%8F%B4_%EB%B0%B1_l0wech.mp4"></video>
+</div><div class="veil"></div><nav class="nav" aria-label="주요 메뉴"><a href="#top" class="brand" aria-label="페이지 맨 위로">PARK CHIHEON</a><div class="navLinks"><a href="#featured">대표작</a><a href="#work">전체 작업</a></div></nav><div class="heroCopy"><p class="eyebrow">VIDEO EDITOR · PORTFOLIO</p><h1>편집자<br>박치헌</h1><p class="heroDescription">콘텐츠의 목적을 읽고, 시청자의 호흡에 맞춰 장면의 리듬을 설계합니다.</p><a class="heroLink" href="#featured">작업물 보기 <span aria-hidden="true">↓</span></a></div><div class="reelStatus" aria-hidden="true"><span class="statusDot"></span> SHOWREEL · LOOP · MUTED</div></section><section class="statement" aria-label="편집 방향"><p class="statementLead">화려한 장식보다 필요한 컷.<br>빠른 호흡보다 정확한 호흡.</p><div class="statementSide"><p>브랜드 메시지와 시청 지속 시간을 함께 고려하는 영상 편집을 지향합니다.</p><div class="capabilities" aria-label="작업 분야"><span>Brand</span><span>YouTube</span><span>Education</span><span>Live</span><span>Short-form</span></div></div></section><section class="featured" id="featured" aria-labelledby="featured-title"><div class="sectionHead"><div><p class="eyebrow">SELECTED WORKS · 05</p><h2 id="featured-title">대표 작업</h2></div>
+<p class="sectionNote">현재 포트폴리오를 대표하는 다섯 편을 골랐습니다.</p>
+</div><div class="featuredGrid">
+<a class="feature feature-1" href="https://youtu.be/0SWfvbEaXGA" target="_blank" rel="noreferrer"><span class="featureMedia"><img src="https://i.ytimg.com/vi/0SWfvbEaXGA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/0SWfvbEaXGA/hqdefault.jpg'" alt="INNORIX 브랜드 영상 02 영상 썸네일" loading="eager"><span class="featureIndex">01</span><span class="watchLabel">PLAY ↗</span></span><span class="featureMeta"><span>브랜드·인터뷰 · AI Brand Film</span><strong>INNORIX 브랜드 영상 02</strong></span></a>
+<a class="feature feature-2" href="https://youtu.be/dJKt6cc0_cs" target="_blank" rel="noreferrer"><span class="featureMedia"><img src="https://i.ytimg.com/vi/dJKt6cc0_cs/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/dJKt6cc0_cs/hqdefault.jpg'" alt="쿠팡 농산물 위탁판매 14일 수익 검증 영상 썸네일" loading="eager"><span class="featureIndex">02</span><span class="watchLabel">PLAY ↗</span></span><span class="featureMeta"><span>유튜브·콘텐츠 · YouTube Long-form</span><strong>쿠팡 농산물 위탁판매 14일 수익 검증</strong></span></a>
+<a class="feature feature-3" href="https://www.youtube.com/watch?v=ZqAlakwcD_A" target="_blank" rel="noreferrer"><span class="featureMedia"><img src="https://i.ytimg.com/vi/ZqAlakwcD_A/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/ZqAlakwcD_A/hqdefault.jpg'" alt="게임스토리 요약하기 [엘든링] 영상 썸네일" loading="lazy"><span class="featureIndex">03</span><span class="watchLabel">PLAY ↗</span></span><span class="featureMeta"><span>유튜브·콘텐츠 · YouTube Long-form</span><strong>게임스토리 요약하기 [엘든링]</strong></span></a>
+<a class="feature feature-4" href="https://youtu.be/c25pVN3qHi8" target="_blank" rel="noreferrer"><span class="featureMedia"><img src="https://i.ytimg.com/vi/c25pVN3qHi8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/c25pVN3qHi8/hqdefault.jpg'" alt="[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰 영상 썸네일" loading="lazy"><span class="featureIndex">04</span><span class="watchLabel">PLAY ↗</span></span><span class="featureMeta"><span>브랜드·인터뷰 · Campaign Interview</span><strong>[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰</strong></span></a>
+<a class="feature feature-5" href="https://www.youtube.com/watch?v=r_94zBPR0qU" target="_blank" rel="noreferrer"><span class="featureMedia"><img src="https://i.ytimg.com/vi/r_94zBPR0qU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/r_94zBPR0qU/hqdefault.jpg'" alt="Number One - Bankai / 블리치 OST / Band Cover By Dosio 영상 썸네일" loading="lazy"><span class="featureIndex">05</span><span class="watchLabel">PLAY ↗</span></span><span class="featureMeta"><span>라이브·뮤직 · Band Live</span><strong>Number One - Bankai / 블리치 OST / Band Cover By Dosio</strong></span></a>
+</div></section><section class="work" id="work" aria-labelledby="work-title"><div class="sectionHead archiveHead"><div><p class="eyebrow">WORK ARCHIVE · 29</p><h2 id="work-title">전체 작업</h2></div><p class="sectionNote">형식과 목적에 따라 작업을 분류했습니다.</p></div><div class="filterBar" role="group" aria-label="작업 카테고리"><div class="filters"><button type="button" class="active" aria-pressed="true" data-filter="전체">전체</button><button type="button" class="" aria-pressed="false" data-filter="브랜드·인터뷰">브랜드·인터뷰</button><button type="button" class="" aria-pressed="false" data-filter="유튜브·콘텐츠">유튜브·콘텐츠</button><button type="button" class="" aria-pressed="false" data-filter="교육·B2B">교육·B2B</button><button type="button" class="" aria-pressed="false" data-filter="라이브·뮤직">라이브·뮤직</button><button type="button" class="" aria-pressed="false" data-filter="숏폼">숏폼</button></div><span class="resultCount" aria-live="polite">29 PROJECTS</span></div><div class="grid"><a class="card" data-category="라이브·뮤직" href="https://www.youtube.com/watch?v=r_94zBPR0qU" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/r_94zBPR0qU/hqdefault.jpg" alt="Number One - Bankai / 블리치 OST / Band Cover By Dosio 영상 썸네일" loading="lazy"><span class="cardIndex">01</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>Band Live</span></span><strong>Number One - Bankai / 블리치 OST / Band Cover By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://www.youtube.com/watch?v=FEsH7DMxro4" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/FEsH7DMxro4/hqdefault.jpg" alt="B2B 마케팅 교육 영상 31편 영상 썸네일" loading="lazy"><span class="cardIndex">02</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Education Series</span></span><strong>B2B 마케팅 교육 영상 31편</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/mUO9dahc6H4" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/mUO9dahc6H4/hqdefault.jpg" alt="AI와 함께 일하는 법, Claude Cowork로 시작하십시오. 영상 썸네일" loading="lazy"><span class="cardIndex">03</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Content</span></span><strong>AI와 함께 일하는 법, Claude Cowork로 시작하십시오.</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=mp8e2UBhqO0" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/mp8e2UBhqO0/hqdefault.jpg" alt="게임스토리 요약하기 [다크소울] 영상 썸네일" loading="lazy"><span class="cardIndex">04</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>게임스토리 요약하기 [다크소울]</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/c25pVN3qHi8" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/c25pVN3qHi8/hqdefault.jpg" alt="[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰 영상 썸네일" loading="lazy"><span class="cardIndex">05</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Campaign Interview</span></span><strong>[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/hQ_kcmHYoNw" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/hQ_kcmHYoNw/hqdefault.jpg" alt="800억원을 아낀 만원짜리 아이디어 영상 썸네일" loading="lazy"><span class="cardIndex">06</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>800억원을 아낀 만원짜리 아이디어</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="라이브·뮤직" href="https://youtu.be/i6Qa6d2Jlzc" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/i6Qa6d2Jlzc/hqdefault.jpg" alt="Drop - 미나미 美波 / 밴드 커버 By Dosio 영상 썸네일" loading="lazy"><span class="cardIndex">07</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>Band Live</span></span><strong>Drop - 미나미 美波 / 밴드 커버 By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="라이브·뮤직" href="https://youtu.be/LFJO4QHHc_4" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/LFJO4QHHc_4/hqdefault.jpg" alt="몽환 - MY FIRST STORY x Hyde / 귀멸의 칼날 OP / 밴드 커버 영상 썸네일" loading="lazy"><span class="cardIndex">08</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>Band Live</span></span><strong>몽환 - MY FIRST STORY x Hyde / 귀멸의 칼날 OP / 밴드 커버</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://youtu.be/4v2YyKGBCcM" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/4v2YyKGBCcM/hqdefault.jpg" alt="영화인듯 영화아닌 영화같은 광고 리뷰 영상 썸네일" loading="lazy"><span class="cardIndex">09</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>Review Content</span></span><strong>영화인듯 영화아닌 영화같은 광고 리뷰</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="라이브·뮤직" href="https://youtu.be/gnAzFUbF574" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/gnAzFUbF574/hqdefault.jpg" alt="Re: Re: - 아시안 쿵푸 제너레이션 / 밴드 커버 By Dosio 영상 썸네일" loading="lazy"><span class="cardIndex">10</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>Band Live</span></span><strong>Re: Re: - 아시안 쿵푸 제너레이션 / 밴드 커버 By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="라이브·뮤직" href="https://youtu.be/NGq1oz5PUzk" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/NGq1oz5PUzk/hqdefault.jpg" alt="주술회전 2기 OP - 푸르름이 사는 곳 / Band Cover By Dosio 영상 썸네일" loading="lazy"><span class="cardIndex">11</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>Band Live</span></span><strong>주술회전 2기 OP - 푸르름이 사는 곳 / Band Cover By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="라이브·뮤직" href="https://www.youtube.com/watch?v=LqQIxuT-E88" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/LqQIxuT-E88/hqdefault.jpg" alt="오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio 영상 썸네일" loading="lazy"><span class="cardIndex">12</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>Band Live</span></span><strong>오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=ZqAlakwcD_A" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/ZqAlakwcD_A/hqdefault.jpg" alt="게임스토리 요약하기 [엘든링] 영상 썸네일" loading="lazy"><span class="cardIndex">13</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>게임스토리 요약하기 [엘든링]</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://www.youtube.com/watch?v=jZaAHcE_hik" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/jZaAHcE_hik/hqdefault.jpg" alt="B2B마케팅 | 나눔캠퍼스 온라인 강의 영상 썸네일" loading="lazy"><span class="cardIndex">14</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Online Lecture</span></span><strong>B2B마케팅 | 나눔캠퍼스 온라인 강의</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/GyJso2K2upY" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/GyJso2K2upY/hqdefault.jpg" alt="[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰 영상 썸네일" loading="lazy"><span class="cardIndex">15</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Campaign Interview</span></span><strong>[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=wFDLRLagsck" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/wFDLRLagsck/hqdefault.jpg" alt="[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유 영상 썸네일" loading="lazy"><span class="cardIndex">16</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Series</span></span><strong>[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=VKYpceGnvtg" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/VKYpceGnvtg/hqdefault.jpg" alt="[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙 영상 썸네일" loading="lazy"><span class="cardIndex">17</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Series</span></span><strong>[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://youtu.be/V_l4qCgY7OA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/V_l4qCgY7OA/hqdefault.jpg" alt="경제 분야 롱폼 강의 영상 썸네일" loading="lazy"><span class="cardIndex">18</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Lecture Long-form</span></span><strong>경제 분야 롱폼 강의</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://youtu.be/TTU17vFbM2E" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/TTU17vFbM2E/hqdefault.jpg" alt="수학 강의 30분 롱폼 영상 썸네일" loading="lazy"><span class="cardIndex">19</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Lecture Long-form</span></span><strong>수학 강의 30분 롱폼</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/arm5oq2zGNk" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/arm5oq2zGNk/hqdefault.jpg" alt="40분동안 파리만 잡았던 진짜 이유 영상 썸네일" loading="lazy"><span class="cardIndex">20</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>40분동안 파리만 잡았던 진짜 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/n2Iy9KXwuog" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/n2Iy9KXwuog/hqdefault.jpg" alt="톰 크루즈 스턴트 중 가장 평가절하된 장면 영상 썸네일" loading="lazy"><span class="cardIndex">21</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>톰 크루즈 스턴트 중 가장 평가절하된 장면</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/mx5nvdaTeLI" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/mx5nvdaTeLI/hqdefault.jpg" alt="시그니엘보다 저렴한 토니 스타크의 집 영상 썸네일" loading="lazy"><span class="cardIndex">22</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>시그니엘보다 저렴한 토니 스타크의 집</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/00J9c2HU2yI" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/00J9c2HU2yI/hqdefault.jpg" alt="모피어스 선글라스가 벗겨지지 않았던 진짜 이유 영상 썸네일" loading="lazy"><span class="cardIndex">23</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>모피어스 선글라스가 벗겨지지 않았던 진짜 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/y3t1w3OJkyo" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/y3t1w3OJkyo/hqdefault.jpg" alt="역대급 충격적인 영화의 다른결말 영상 썸네일" loading="lazy"><span class="cardIndex">24</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>역대급 충격적인 영화의 다른결말</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/-jkEsbLNUXg" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/-jkEsbLNUXg/hqdefault.jpg" alt="[허진명프로] EP09. 슬라이스 원인 연습 영상 썸네일" loading="lazy"><span class="cardIndex">25</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>[허진명프로] EP09. 슬라이스 원인 연습</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/HhebzEC_sf4" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/HhebzEC_sf4/hqdefault.jpg" alt="[허진명프로] EP05. 다운스윙 공간 만들기 영상 썸네일" loading="lazy"><span class="cardIndex">26</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>[허진명프로] EP05. 다운스윙 공간 만들기</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/cY8wyWTSuVA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/cY8wyWTSuVA/hqdefault.jpg" alt="INNORIX 브랜드 영상 01 영상 썸네일" loading="lazy"><span class="cardIndex">27</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Film</span></span><strong>INNORIX 브랜드 영상 01</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/0SWfvbEaXGA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/0SWfvbEaXGA/hqdefault.jpg" alt="INNORIX 브랜드 영상 02 영상 썸네일" loading="lazy"><span class="cardIndex">28</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Film</span></span><strong>INNORIX 브랜드 영상 02</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://youtu.be/dJKt6cc0_cs" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/dJKt6cc0_cs/hqdefault.jpg" alt="쿠팡 농산물 위탁판매 14일 수익 검증 영상 썸네일" loading="lazy"><span class="cardIndex">29</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>쿠팡 농산물 위탁판매 14일 수익 검증</strong><span class="cardAction">영상 보기 ↗</span></span></a></div></section><footer><div><strong>PARK CHIHEON</strong><span>VIDEO EDITOR</span></div><span>Brand · YouTube · Education · Live · Short-form</span></footer></main><script>(()=>{const buttons=[...document.querySelectorAll("[data-filter]")];const cards=[...document.querySelectorAll(".card[data-category]")];const count=document.querySelector(".resultCount");buttons.forEach(button=>button.addEventListener("click",()=>{const category=button.dataset.filter;buttons.forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});let visible=0;cards.forEach(card=>{const show=category==="전체"||card.dataset.category===category;card.hidden=!show;if(show)visible+=1;});count.textContent=String(visible).padStart(2,"0")+" PROJECTS";}));})();</script></body></html>
