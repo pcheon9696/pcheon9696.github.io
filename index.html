@@ -547,6 +547,128 @@ h2 {
   padding-top: 20px;
 }
 
+.estimate {
+  background: var(--background);
+  color: var(--foreground);
+  padding: 112px 64px 124px;
+}
+
+.estimate .sectionHead {
+  margin-bottom: 50px;
+}
+
+.estimate .sectionNote {
+  color: rgba(245, 244, 239, 0.62);
+}
+
+.estimateGrid {
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.estimateItem {
+  border-bottom: 1px solid var(--line);
+  min-width: 0;
+  padding: 34px 32px 38px 0;
+}
+
+.estimateItem + .estimateItem {
+  border-left: 1px solid var(--line);
+  padding-left: 32px;
+}
+
+.estimateIndex {
+  color: var(--signal);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.estimateItem h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 0 0;
+}
+
+.estimatePrice {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0 14px;
+}
+
+.estimatePrice strong {
+  font-size: 42px;
+  font-weight: 650;
+  line-height: 1;
+}
+
+.estimatePrice span {
+  color: rgba(245, 244, 239, 0.48);
+  font-size: 11px;
+}
+
+.estimateDescription {
+  color: rgba(245, 244, 239, 0.66);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0 0 26px;
+  max-width: 340px;
+}
+
+.estimateList {
+  border-top: 1px solid rgba(245, 244, 239, 0.14);
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+.estimateList li {
+  color: rgba(245, 244, 239, 0.78);
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+
+.estimateList li::before {
+  background: var(--signal);
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0.7em;
+  width: 6px;
+}
+
+.estimateFoot {
+  align-items: flex-end;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+
+.estimateNote {
+  color: rgba(245, 244, 239, 0.48);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 720px;
+}
+
+.estimateLink {
+  border-bottom: 1px solid var(--signal);
+  color: var(--foreground);
+  flex: 0 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
 footer {
   align-items: flex-end;
   background: var(--background);
@@ -573,6 +695,7 @@ footer strong {
   .statement,
   .featured,
   .work,
+  .estimate,
   footer {
     padding-left: 38px;
     padding-right: 38px;
@@ -653,6 +776,21 @@ footer strong {
   .resultCount {
     padding-left: 14px;
   }
+
+  .estimateGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .estimateItem,
+  .estimateItem + .estimateItem {
+    border-left: 0;
+    padding: 28px 0 30px;
+  }
+
+  .estimateFoot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 560px) {
@@ -661,6 +799,7 @@ footer strong {
   .statement,
   .featured,
   .work,
+  .estimate,
   footer {
     padding-left: 20px;
     padding-right: 20px;
@@ -713,7 +852,8 @@ footer strong {
 
   .statement,
   .featured,
-  .work {
+  .work,
+  .estimate {
     padding-bottom: 82px;
     padding-top: 82px;
   }
@@ -752,6 +892,10 @@ footer strong {
     min-height: 142px;
   }
 
+  .estimatePrice strong {
+    font-size: 36px;
+  }
+
   footer {
     align-items: flex-start;
     flex-direction: column;
@@ -781,7 +925,15 @@ button:focus-visible {
 }
 </style></head><body><main><section class="hero" id="top" aria-label="박치헌 영상 포트폴리오 소개"><div class="showreel" aria-hidden="true">
 <video autoplay muted loop playsinline preload="metadata"><source src="https://res.cloudinary.com/dsihni53n/video/upload/c_limit,w_1920/q_auto:good/f_auto/%ED%8F%AC%ED%8F%B4_%EB%B0%B1_l0wech.mp4"></video>
-</div><div class="veil"></div><nav class="nav" aria-label="주요 메뉴"><a href="#top" class="brand" aria-label="페이지 맨 위로">PARK CHIHEON</a><div class="navLinks"><a href="#featured">대표작</a><a href="#work">전체 작업</a></div></nav><div class="heroCopy"><p class="eyebrow">VIDEO EDITOR · PORTFOLIO</p>
+</div><div class="veil"></div><nav class="nav" aria-label="주요 메뉴">
+<a href="#top" class="brand" aria-label="페이지 맨 위로">PARK CHIHEON</a>
+<div class="navLinks">
+<a href="#featured">대표작</a>
+<a href="#work">전체 작업</a>
+<a href="#estimate">견적</a>
+</div>
+</nav>
+<div class="heroCopy"><p class="eyebrow">VIDEO EDITOR · PORTFOLIO</p>
 <h1 class="heroTitle"><span class="heroRole">편집자</span><span class="heroName">박치헌</span></h1>
 <p class="heroDescription">콘텐츠의 목적을 읽고, 시청자의 호흡에 맞춰 장면의 리듬을 설계합니다.</p><a class="heroLink" href="#featured">작업물 보기 <span aria-hidden="true">↓</span></a></div><div class="reelStatus" aria-hidden="true"><span class="statusDot"></span> SHOWREEL · LOOP · MUTED</div></section><section class="statement" aria-label="편집 방향"><p class="statementLead">화려한 장식보다 필요한 컷.<br>빠른 호흡보다 정확한 호흡.</p><div class="statementSide"><p>브랜드 메시지와 시청 지속 시간을 함께 고려하는 영상 편집을 지향합니다.</p><div class="capabilities" aria-label="작업 분야"><span>Brand</span><span>YouTube</span><span>Education</span><span>Live</span><span>Short-form</span></div></div></section><section class="featured" id="featured" aria-labelledby="featured-title"><div class="sectionHead"><div><p class="eyebrow">SELECTED WORKS · 05</p><h2 id="featured-title">대표 작업</h2></div>
 <p class="sectionNote">현재 포트폴리오를 대표하는 다섯 편을 골랐습니다.</p>
@@ -803,4 +955,54 @@ Band Music Cover
 Band Music Cover
 </span></span><strong>주술회전 2기 OP - 푸르름이 사는 곳 / Band Cover By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="라이브·뮤직" href="https://www.youtube.com/watch?v=LqQIxuT-E88" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/LqQIxuT-E88/hqdefault.jpg" alt="오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio 영상 썸네일" loading="lazy"><span class="cardIndex">12</span></span><span class="meta"><span class="metaTop"><span>라이브·뮤직</span><span>
 Band Music Cover
-</span></span><strong>오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=ZqAlakwcD_A" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/ZqAlakwcD_A/hqdefault.jpg" alt="게임스토리 요약하기 [엘든링] 영상 썸네일" loading="lazy"><span class="cardIndex">13</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>게임스토리 요약하기 [엘든링]</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://www.youtube.com/watch?v=jZaAHcE_hik" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/jZaAHcE_hik/hqdefault.jpg" alt="B2B마케팅 | 나눔캠퍼스 온라인 강의 영상 썸네일" loading="lazy"><span class="cardIndex">14</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Online Lecture</span></span><strong>B2B마케팅 | 나눔캠퍼스 온라인 강의</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/GyJso2K2upY" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/GyJso2K2upY/hqdefault.jpg" alt="[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰 영상 썸네일" loading="lazy"><span class="cardIndex">15</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Campaign Interview</span></span><strong>[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=wFDLRLagsck" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/wFDLRLagsck/hqdefault.jpg" alt="[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유 영상 썸네일" loading="lazy"><span class="cardIndex">16</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Series</span></span><strong>[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=VKYpceGnvtg" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/VKYpceGnvtg/hqdefault.jpg" alt="[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙 영상 썸네일" loading="lazy"><span class="cardIndex">17</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Series</span></span><strong>[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://youtu.be/V_l4qCgY7OA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/V_l4qCgY7OA/hqdefault.jpg" alt="경제 분야 롱폼 강의 영상 썸네일" loading="lazy"><span class="cardIndex">18</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Lecture Long-form</span></span><strong>경제 분야 롱폼 강의</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://youtu.be/TTU17vFbM2E" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/TTU17vFbM2E/hqdefault.jpg" alt="수학 강의 30분 롱폼 영상 썸네일" loading="lazy"><span class="cardIndex">19</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Lecture Long-form</span></span><strong>수학 강의 30분 롱폼</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/arm5oq2zGNk" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/arm5oq2zGNk/hqdefault.jpg" alt="40분동안 파리만 잡았던 진짜 이유 영상 썸네일" loading="lazy"><span class="cardIndex">20</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>40분동안 파리만 잡았던 진짜 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/n2Iy9KXwuog" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/n2Iy9KXwuog/hqdefault.jpg" alt="톰 크루즈 스턴트 중 가장 평가절하된 장면 영상 썸네일" loading="lazy"><span class="cardIndex">21</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>톰 크루즈 스턴트 중 가장 평가절하된 장면</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/mx5nvdaTeLI" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/mx5nvdaTeLI/hqdefault.jpg" alt="시그니엘보다 저렴한 토니 스타크의 집 영상 썸네일" loading="lazy"><span class="cardIndex">22</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>시그니엘보다 저렴한 토니 스타크의 집</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/00J9c2HU2yI" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/00J9c2HU2yI/hqdefault.jpg" alt="모피어스 선글라스가 벗겨지지 않았던 진짜 이유 영상 썸네일" loading="lazy"><span class="cardIndex">23</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>모피어스 선글라스가 벗겨지지 않았던 진짜 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/y3t1w3OJkyo" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/y3t1w3OJkyo/hqdefault.jpg" alt="역대급 충격적인 영화의 다른결말 영상 썸네일" loading="lazy"><span class="cardIndex">24</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>역대급 충격적인 영화의 다른결말</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/-jkEsbLNUXg" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/-jkEsbLNUXg/hqdefault.jpg" alt="[허진명프로] EP09. 슬라이스 원인 연습 영상 썸네일" loading="lazy"><span class="cardIndex">25</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>[허진명프로] EP09. 슬라이스 원인 연습</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/HhebzEC_sf4" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/HhebzEC_sf4/hqdefault.jpg" alt="[허진명프로] EP05. 다운스윙 공간 만들기 영상 썸네일" loading="lazy"><span class="cardIndex">26</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>[허진명프로] EP05. 다운스윙 공간 만들기</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/cY8wyWTSuVA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/cY8wyWTSuVA/hqdefault.jpg" alt="INNORIX 브랜드 영상 01 영상 썸네일" loading="lazy"><span class="cardIndex">27</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Film</span></span><strong>INNORIX 브랜드 영상 01</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/0SWfvbEaXGA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/0SWfvbEaXGA/hqdefault.jpg" alt="INNORIX 브랜드 영상 02 영상 썸네일" loading="lazy"><span class="cardIndex">28</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Film</span></span><strong>INNORIX 브랜드 영상 02</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://youtu.be/dJKt6cc0_cs" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/dJKt6cc0_cs/hqdefault.jpg" alt="쿠팡 농산물 위탁판매 14일 수익 검증 영상 썸네일" loading="lazy"><span class="cardIndex">29</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>쿠팡 농산물 위탁판매 14일 수익 검증</strong><span class="cardAction">영상 보기 ↗</span></span></a></div></section><footer><div><strong>PARK CHIHEON</strong><span>VIDEO EDITOR</span></div><span>Brand · YouTube · Education · Live · Short-form</span></footer></main><script>(()=>{const buttons=[...document.querySelectorAll("[data-filter]")];const cards=[...document.querySelectorAll(".card[data-category]")];const count=document.querySelector(".resultCount");buttons.forEach(button=>button.addEventListener("click",()=>{const category=button.dataset.filter;buttons.forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});let visible=0;cards.forEach(card=>{const show=category==="전체"||card.dataset.category===category;card.hidden=!show;if(show)visible+=1;});count.textContent=String(visible).padStart(2,"0")+" PROJECTS";}));})();</script></body></html>
+</span></span><strong>오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=ZqAlakwcD_A" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/ZqAlakwcD_A/hqdefault.jpg" alt="게임스토리 요약하기 [엘든링] 영상 썸네일" loading="lazy"><span class="cardIndex">13</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>게임스토리 요약하기 [엘든링]</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://www.youtube.com/watch?v=jZaAHcE_hik" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/jZaAHcE_hik/hqdefault.jpg" alt="B2B마케팅 | 나눔캠퍼스 온라인 강의 영상 썸네일" loading="lazy"><span class="cardIndex">14</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Online Lecture</span></span><strong>B2B마케팅 | 나눔캠퍼스 온라인 강의</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/GyJso2K2upY" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/GyJso2K2upY/hqdefault.jpg" alt="[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰 영상 썸네일" loading="lazy"><span class="cardIndex">15</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Campaign Interview</span></span><strong>[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=wFDLRLagsck" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/wFDLRLagsck/hqdefault.jpg" alt="[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유 영상 썸네일" loading="lazy"><span class="cardIndex">16</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Series</span></span><strong>[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://www.youtube.com/watch?v=VKYpceGnvtg" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/VKYpceGnvtg/hqdefault.jpg" alt="[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙 영상 썸네일" loading="lazy"><span class="cardIndex">17</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Series</span></span><strong>[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://youtu.be/V_l4qCgY7OA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/V_l4qCgY7OA/hqdefault.jpg" alt="경제 분야 롱폼 강의 영상 썸네일" loading="lazy"><span class="cardIndex">18</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Lecture Long-form</span></span><strong>경제 분야 롱폼 강의</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="교육·B2B" href="https://youtu.be/TTU17vFbM2E" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/TTU17vFbM2E/hqdefault.jpg" alt="수학 강의 30분 롱폼 영상 썸네일" loading="lazy"><span class="cardIndex">19</span></span><span class="meta"><span class="metaTop"><span>교육·B2B</span><span>Lecture Long-form</span></span><strong>수학 강의 30분 롱폼</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/arm5oq2zGNk" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/arm5oq2zGNk/hqdefault.jpg" alt="40분동안 파리만 잡았던 진짜 이유 영상 썸네일" loading="lazy"><span class="cardIndex">20</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>40분동안 파리만 잡았던 진짜 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/n2Iy9KXwuog" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/n2Iy9KXwuog/hqdefault.jpg" alt="톰 크루즈 스턴트 중 가장 평가절하된 장면 영상 썸네일" loading="lazy"><span class="cardIndex">21</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>톰 크루즈 스턴트 중 가장 평가절하된 장면</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/mx5nvdaTeLI" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/mx5nvdaTeLI/hqdefault.jpg" alt="시그니엘보다 저렴한 토니 스타크의 집 영상 썸네일" loading="lazy"><span class="cardIndex">22</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>시그니엘보다 저렴한 토니 스타크의 집</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/00J9c2HU2yI" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/00J9c2HU2yI/hqdefault.jpg" alt="모피어스 선글라스가 벗겨지지 않았던 진짜 이유 영상 썸네일" loading="lazy"><span class="cardIndex">23</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>모피어스 선글라스가 벗겨지지 않았던 진짜 이유</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/y3t1w3OJkyo" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/y3t1w3OJkyo/hqdefault.jpg" alt="역대급 충격적인 영화의 다른결말 영상 썸네일" loading="lazy"><span class="cardIndex">24</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>역대급 충격적인 영화의 다른결말</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/-jkEsbLNUXg" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/-jkEsbLNUXg/hqdefault.jpg" alt="[허진명프로] EP09. 슬라이스 원인 연습 영상 썸네일" loading="lazy"><span class="cardIndex">25</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>[허진명프로] EP09. 슬라이스 원인 연습</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="숏폼" href="https://www.youtube.com/shorts/HhebzEC_sf4" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/HhebzEC_sf4/hqdefault.jpg" alt="[허진명프로] EP05. 다운스윙 공간 만들기 영상 썸네일" loading="lazy"><span class="cardIndex">26</span></span><span class="meta"><span class="metaTop"><span>숏폼</span><span>YouTube Shorts</span></span><strong>[허진명프로] EP05. 다운스윙 공간 만들기</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/cY8wyWTSuVA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/cY8wyWTSuVA/hqdefault.jpg" alt="INNORIX 브랜드 영상 01 영상 썸네일" loading="lazy"><span class="cardIndex">27</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Film</span></span><strong>INNORIX 브랜드 영상 01</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="브랜드·인터뷰" href="https://youtu.be/0SWfvbEaXGA" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/0SWfvbEaXGA/hqdefault.jpg" alt="INNORIX 브랜드 영상 02 영상 썸네일" loading="lazy"><span class="cardIndex">28</span></span><span class="meta"><span class="metaTop"><span>브랜드·인터뷰</span><span>Brand Film</span></span><strong>INNORIX 브랜드 영상 02</strong><span class="cardAction">영상 보기 ↗</span></span></a><a class="card" data-category="유튜브·콘텐츠" href="https://youtu.be/dJKt6cc0_cs" target="_blank" rel="noreferrer"><span class="thumb"><img src="https://i.ytimg.com/vi/dJKt6cc0_cs/hqdefault.jpg" alt="쿠팡 농산물 위탁판매 14일 수익 검증 영상 썸네일" loading="lazy"><span class="cardIndex">29</span></span><span class="meta"><span class="metaTop"><span>유튜브·콘텐츠</span><span>YouTube Long-form</span></span><strong>쿠팡 농산물 위탁판매 14일 수익 검증</strong><span class="cardAction">영상 보기 ↗</span></span></a></div>
+</section>
+<section class="estimate" id="estimate" aria-labelledby="estimate-title">
+<div class="sectionHead">
+<div><p class="eyebrow">ESTIMATE · GUIDE</p><h2 id="estimate-title">견적 안내</h2></div>
+<p class="sectionNote">영상의 목적과 작업 범위에 따라<br>필요한 편집 수준을 선택할 수 있습니다.</p>
+</div>
+<div class="estimateGrid">
+<article class="estimateItem">
+<span class="estimateIndex">01 · SIMPLE</span>
+<h3>단순 편집</h3>
+<p class="estimatePrice"><strong>10,000원~</strong><span>/ 완성본 1분</span></p>
+<p class="estimateDescription">말의 흐름과 불필요한 구간을 정리하는 기본 편집입니다.</p>
+<ul class="estimateList">
+<li>기본 컷 편집</li>
+<li>기본 자막 삽입</li>
+<li>음량 정리 및 기본 색보정</li>
+<li>기본 수정 1회</li>
+</ul>
+</article>
+<article class="estimateItem">
+<span class="estimateIndex">02 · STANDARD</span>
+<h3>콘텐츠 편집</h3>
+<p class="estimatePrice"><strong>15,000원~</strong><span>/ 완성본 1분</span></p>
+<p class="estimateDescription">시청 흐름과 정보 전달을 고려해 완성도를 높이는 편집입니다.</p>
+<ul class="estimateList">
+<li>호흡을 고려한 컷 구성</li>
+<li>디자인 자막 및 화면 자료</li>
+<li>BGM·효과음 믹싱</li>
+<li>기본 색보정 및 수정 2회</li>
+</ul>
+</article>
+<article class="estimateItem">
+<span class="estimateIndex">03 · SHORT-FORM</span>
+<h3>숏폼 편집</h3>
+<p class="estimatePrice"><strong>20,000원~</strong><span>/ 1편</span></p>
+<p class="estimateDescription">세로형 플랫폼의 빠른 호흡과 첫 장면 후킹에 맞춘 편집입니다.</p>
+<ul class="estimateList">
+<li>60초 내외 세로형 구성</li>
+<li>핵심 구간 선별 및 템포 편집</li>
+<li>자막·BGM·효과음</li>
+<li>9:16 플랫폼 최적화 및 수정 2회</li>
+</ul>
+</article>
+</div>
+<div class="estimateFoot">
+<p class="estimateNote">표시 금액은 기본 작업 기준입니다. 원본 분량, 그래픽 난이도, 납기, 수정 범위에 따라 최종 견적이 달라질 수 있습니다.</p>
+<a class="estimateLink" href="mailto:clgjsdl12@gmail.com?subject=%EC%98%81%EC%83%81%20%ED%8E%B8%EC%A7%91%20%EA%B2%AC%EC%A0%81%20%EB%AC%B8%EC%9D%98">견적 문의하기 ↗</a>
+</div>
+</section>
+<footer><div><strong>PARK CHIHEON</strong><span>VIDEO EDITOR</span></div><span>Brand · YouTube · Education · Live · Short-form</span></footer></main><script>(()=>{const buttons=[...document.querySelectorAll("[data-filter]")];const cards=[...document.querySelectorAll(".card[data-category]")];const count=document.querySelector(".resultCount");buttons.forEach(button=>button.addEventListener("click",()=>{const category=button.dataset.filter;buttons.forEach(item=>{const active=item===button;item.classList.toggle("active",active);item.setAttribute("aria-pressed",String(active));});let visible=0;cards.forEach(card=>{const show=category==="전체"||card.dataset.category===category;card.hidden=!show;if(show)visible+=1;});count.textContent=String(visible).padStart(2,"0")+" PROJECTS";}));})();</script></body></html>
