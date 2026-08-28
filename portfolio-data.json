@@ -1,0 +1,332 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-28T00:00:00+09:00",
+  "categories": [
+    "브랜드·인터뷰",
+    "유튜브·콘텐츠",
+    "교육·B2B",
+    "라이브·뮤직",
+    "숏폼"
+  ],
+  "works": [
+    {
+      "id": "r_94zBPR0qU",
+      "url": "https://www.youtube.com/watch?v=r_94zBPR0qU",
+      "videoId": "r_94zBPR0qU",
+      "title": "Number One - Bankai / 블리치 OST / Band Cover By Dosio",
+      "category": "라이브·뮤직",
+      "format": "Band Music Cover",
+      "thumbnail": "https://i.ytimg.com/vi/r_94zBPR0qU/hqdefault.jpg",
+      "featuredOrder": 4,
+      "visible": true
+    },
+    {
+      "id": "FEsH7DMxro4",
+      "url": "https://www.youtube.com/watch?v=FEsH7DMxro4",
+      "videoId": "FEsH7DMxro4",
+      "title": "B2B 마케팅 교육 영상 31편",
+      "category": "교육·B2B",
+      "format": "Education Series",
+      "thumbnail": "https://i.ytimg.com/vi/FEsH7DMxro4/hqdefault.jpg",
+      "featuredOrder": 2,
+      "visible": true
+    },
+    {
+      "id": "mUO9dahc6H4",
+      "url": "https://youtu.be/mUO9dahc6H4",
+      "videoId": "mUO9dahc6H4",
+      "title": "AI와 함께 일하는 법, Claude Cowork로 시작하십시오.",
+      "category": "브랜드·인터뷰",
+      "format": "Brand Content",
+      "thumbnail": "https://i.ytimg.com/vi/mUO9dahc6H4/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "mp8e2UBhqO0",
+      "url": "https://www.youtube.com/watch?v=mp8e2UBhqO0",
+      "videoId": "mp8e2UBhqO0",
+      "title": "게임스토리 요약하기 [다크소울]",
+      "category": "유튜브·콘텐츠",
+      "format": "YouTube Long-form",
+      "thumbnail": "https://i.ytimg.com/vi/mp8e2UBhqO0/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "c25pVN3qHi8",
+      "url": "https://youtu.be/c25pVN3qHi8",
+      "videoId": "c25pVN3qHi8",
+      "title": "[AD-Z] OB맥주 베스트크리에이티브 선정작 인터뷰",
+      "category": "브랜드·인터뷰",
+      "format": "Campaign Interview",
+      "thumbnail": "https://i.ytimg.com/vi/c25pVN3qHi8/hqdefault.jpg",
+      "featuredOrder": 5,
+      "visible": true
+    },
+    {
+      "id": "hQ_kcmHYoNw",
+      "url": "https://www.youtube.com/shorts/hQ_kcmHYoNw",
+      "videoId": "hQ_kcmHYoNw",
+      "title": "800억원을 아낀 만원짜리 아이디어",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/hQ_kcmHYoNw/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "i6Qa6d2Jlzc",
+      "url": "https://youtu.be/i6Qa6d2Jlzc",
+      "videoId": "i6Qa6d2Jlzc",
+      "title": "Drop - 미나미 美波 / 밴드 커버 By Dosio",
+      "category": "라이브·뮤직",
+      "format": "Band Music Cover",
+      "thumbnail": "https://i.ytimg.com/vi/i6Qa6d2Jlzc/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "LFJO4QHHc_4",
+      "url": "https://youtu.be/LFJO4QHHc_4",
+      "videoId": "LFJO4QHHc_4",
+      "title": "몽환 - MY FIRST STORY x Hyde / 귀멸의 칼날 OP / 밴드 커버",
+      "category": "라이브·뮤직",
+      "format": "Band Music Cover",
+      "thumbnail": "https://i.ytimg.com/vi/LFJO4QHHc_4/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "4v2YyKGBCcM",
+      "url": "https://youtu.be/4v2YyKGBCcM",
+      "videoId": "4v2YyKGBCcM",
+      "title": "영화인듯 영화아닌 영화같은 광고 리뷰",
+      "category": "유튜브·콘텐츠",
+      "format": "Review Content",
+      "thumbnail": "https://i.ytimg.com/vi/4v2YyKGBCcM/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "gnAzFUbF574",
+      "url": "https://youtu.be/gnAzFUbF574",
+      "videoId": "gnAzFUbF574",
+      "title": "Re: Re: - 아시안 쿵푸 제너레이션 / 밴드 커버 By Dosio",
+      "category": "라이브·뮤직",
+      "format": "Band Music Cover",
+      "thumbnail": "https://i.ytimg.com/vi/gnAzFUbF574/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "NGq1oz5PUzk",
+      "url": "https://youtu.be/NGq1oz5PUzk",
+      "videoId": "NGq1oz5PUzk",
+      "title": "주술회전 2기 OP - 푸르름이 사는 곳 / Band Cover By Dosio",
+      "category": "라이브·뮤직",
+      "format": "Band Music Cover",
+      "thumbnail": "https://i.ytimg.com/vi/NGq1oz5PUzk/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "LqQIxuT-E88",
+      "url": "https://www.youtube.com/watch?v=LqQIxuT-E88",
+      "videoId": "LqQIxuT-E88",
+      "title": "오렌지 - SPYAIR / 하이큐 극장판 OST / Band Cover By Dosio",
+      "category": "라이브·뮤직",
+      "format": "Band Music Cover",
+      "thumbnail": "https://i.ytimg.com/vi/LqQIxuT-E88/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "ZqAlakwcD_A",
+      "url": "https://www.youtube.com/watch?v=ZqAlakwcD_A",
+      "videoId": "ZqAlakwcD_A",
+      "title": "게임스토리 요약하기 [엘든링]",
+      "category": "유튜브·콘텐츠",
+      "format": "YouTube Long-form",
+      "thumbnail": "https://i.ytimg.com/vi/ZqAlakwcD_A/hqdefault.jpg",
+      "featuredOrder": 3,
+      "visible": true
+    },
+    {
+      "id": "jZaAHcE_hik",
+      "url": "https://www.youtube.com/watch?v=jZaAHcE_hik",
+      "videoId": "jZaAHcE_hik",
+      "title": "B2B마케팅 | 나눔캠퍼스 온라인 강의",
+      "category": "교육·B2B",
+      "format": "Online Lecture",
+      "thumbnail": "https://i.ytimg.com/vi/jZaAHcE_hik/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "GyJso2K2upY",
+      "url": "https://youtu.be/GyJso2K2upY",
+      "videoId": "GyJso2K2upY",
+      "title": "[AD-Z] 핀다 청춘 편 베스트크리에이티브 인터뷰",
+      "category": "브랜드·인터뷰",
+      "format": "Campaign Interview",
+      "thumbnail": "https://i.ytimg.com/vi/GyJso2K2upY/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "wFDLRLagsck",
+      "url": "https://www.youtube.com/watch?v=wFDLRLagsck",
+      "videoId": "wFDLRLagsck",
+      "title": "[허진명프로] EP06. 백스윙 헤드가 뒤로가는 이유",
+      "category": "유튜브·콘텐츠",
+      "format": "YouTube Series",
+      "thumbnail": "https://i.ytimg.com/vi/wFDLRLagsck/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "VKYpceGnvtg",
+      "url": "https://www.youtube.com/watch?v=VKYpceGnvtg",
+      "videoId": "VKYpceGnvtg",
+      "title": "[허진명프로] EP05. 인 아웃 패스가 나오는 다운스윙",
+      "category": "유튜브·콘텐츠",
+      "format": "YouTube Series",
+      "thumbnail": "https://i.ytimg.com/vi/VKYpceGnvtg/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "V_l4qCgY7OA",
+      "url": "https://youtu.be/V_l4qCgY7OA",
+      "videoId": "V_l4qCgY7OA",
+      "title": "경제 분야 롱폼 강의",
+      "category": "교육·B2B",
+      "format": "Lecture Long-form",
+      "thumbnail": "https://i.ytimg.com/vi/V_l4qCgY7OA/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "TTU17vFbM2E",
+      "url": "https://youtu.be/TTU17vFbM2E",
+      "videoId": "TTU17vFbM2E",
+      "title": "수학 강의 30분 롱폼",
+      "category": "교육·B2B",
+      "format": "Lecture Long-form",
+      "thumbnail": "https://i.ytimg.com/vi/TTU17vFbM2E/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "arm5oq2zGNk",
+      "url": "https://www.youtube.com/shorts/arm5oq2zGNk",
+      "videoId": "arm5oq2zGNk",
+      "title": "40분동안 파리만 잡았던 진짜 이유",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/arm5oq2zGNk/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "n2Iy9KXwuog",
+      "url": "https://www.youtube.com/shorts/n2Iy9KXwuog",
+      "videoId": "n2Iy9KXwuog",
+      "title": "톰 크루즈 스턴트 중 가장 평가절하된 장면",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/n2Iy9KXwuog/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "mx5nvdaTeLI",
+      "url": "https://www.youtube.com/shorts/mx5nvdaTeLI",
+      "videoId": "mx5nvdaTeLI",
+      "title": "시그니엘보다 저렴한 토니 스타크의 집",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/mx5nvdaTeLI/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "00J9c2HU2yI",
+      "url": "https://www.youtube.com/shorts/00J9c2HU2yI",
+      "videoId": "00J9c2HU2yI",
+      "title": "모피어스 선글라스가 벗겨지지 않았던 진짜 이유",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/00J9c2HU2yI/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "y3t1w3OJkyo",
+      "url": "https://www.youtube.com/shorts/y3t1w3OJkyo",
+      "videoId": "y3t1w3OJkyo",
+      "title": "역대급 충격적인 영화의 다른결말",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/y3t1w3OJkyo/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "-jkEsbLNUXg",
+      "url": "https://www.youtube.com/shorts/-jkEsbLNUXg",
+      "videoId": "-jkEsbLNUXg",
+      "title": "[허진명프로] EP09. 슬라이스 원인 연습",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/-jkEsbLNUXg/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "HhebzEC_sf4",
+      "url": "https://www.youtube.com/shorts/HhebzEC_sf4",
+      "videoId": "HhebzEC_sf4",
+      "title": "[허진명프로] EP05. 다운스윙 공간 만들기",
+      "category": "숏폼",
+      "format": "YouTube Shorts",
+      "thumbnail": "https://i.ytimg.com/vi/HhebzEC_sf4/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "cY8wyWTSuVA",
+      "url": "https://youtu.be/cY8wyWTSuVA",
+      "videoId": "cY8wyWTSuVA",
+      "title": "INNORIX 브랜드 영상 01",
+      "category": "브랜드·인터뷰",
+      "format": "Brand Film",
+      "thumbnail": "https://i.ytimg.com/vi/cY8wyWTSuVA/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "0SWfvbEaXGA",
+      "url": "https://youtu.be/0SWfvbEaXGA",
+      "videoId": "0SWfvbEaXGA",
+      "title": "INNORIX 브랜드 영상 02",
+      "category": "브랜드·인터뷰",
+      "format": "Brand Film",
+      "thumbnail": "https://i.ytimg.com/vi/0SWfvbEaXGA/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "dJKt6cc0_cs",
+      "url": "https://youtu.be/dJKt6cc0_cs",
+      "videoId": "dJKt6cc0_cs",
+      "title": "쿠팡 농산물 위탁판매 14일 수익 검증",
+      "category": "유튜브·콘텐츠",
+      "format": "YouTube Long-form",
+      "thumbnail": "https://i.ytimg.com/vi/dJKt6cc0_cs/hqdefault.jpg",
+      "featuredOrder": 1,
+      "visible": true
+    }
+  ]
+}
