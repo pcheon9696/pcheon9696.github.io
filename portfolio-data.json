@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T00:00:00+09:00",
+  "updatedAt": "2026-08-28T12:04:44.171Z",
   "categories": [
     "브랜드·인터뷰",
     "유튜브·콘텐츠",
@@ -9,6 +9,61 @@
     "숏폼"
   ],
   "works": [
+    {
+      "id": "NfCqeF-Qpg4",
+      "url": "https://www.youtube.com/watch?v=NfCqeF-Qpg4",
+      "videoId": "NfCqeF-Qpg4",
+      "title": "“지금 생각해보니 정말 잘 선택했어요”｜BMW 420i M스포츠 프로 출고",
+      "category": "유튜브·콘텐츠",
+      "format": "",
+      "thumbnail": "https://i.ytimg.com/vi/NfCqeF-Qpg4/hqdefault.jpg",
+      "featuredOrder": 1,
+      "visible": true
+    },
+    {
+      "id": "UpiBocw6l8s",
+      "url": "https://www.youtube.com/watch?v=UpiBocw6l8s",
+      "videoId": "UpiBocw6l8s",
+      "title": "할인만 많이 해준다고 끝이 아닙니다｜BMW 520i M스포츠 출고 이야기",
+      "category": "유튜브·콘텐츠",
+      "format": "",
+      "thumbnail": "https://i.ytimg.com/vi/UpiBocw6l8s/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "BxRTqjdyBnE",
+      "url": "https://www.youtube.com/watch?v=BxRTqjdyBnE",
+      "videoId": "BxRTqjdyBnE",
+      "title": "X5 40i M스포츠, 받을 수 있는 할인은 전부 챙겼습니다. 8월도 가보자고!!",
+      "category": "브랜드·인터뷰",
+      "format": "",
+      "thumbnail": "https://i.ytimg.com/vi/BxRTqjdyBnE/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "Y-orUUtFa3w",
+      "url": "https://www.youtube.com/watch?v=Y-orUUtFa3w",
+      "videoId": "Y-orUUtFa3w",
+      "title": "BMW 5시리즈 8월 폭풍할인 무이자 저금리 혜택까지 다 받아가세요",
+      "category": "브랜드·인터뷰",
+      "format": "",
+      "thumbnail": "https://i.ytimg.com/vi/Y-orUUtFa3w/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
+    {
+      "id": "SS2AEbKl-80",
+      "url": "https://youtu.be/SS2AEbKl-80?si=3_YnayyuZE-sGcEI",
+      "videoId": "SS2AEbKl-80",
+      "title": "BMW 8월 할인 3시리즈부터 X7까지 가격이 확 내려갔습니다!",
+      "category": "유튜브·콘텐츠",
+      "format": "",
+      "thumbnail": "https://i.ytimg.com/vi/SS2AEbKl-80/hqdefault.jpg",
+      "featuredOrder": null,
+      "visible": true
+    },
     {
       "id": "r_94zBPR0qU",
       "url": "https://www.youtube.com/watch?v=r_94zBPR0qU",
@@ -325,7 +380,7 @@
       "category": "유튜브·콘텐츠",
       "format": "YouTube Long-form",
       "thumbnail": "https://i.ytimg.com/vi/dJKt6cc0_cs/hqdefault.jpg",
-      "featuredOrder": 1,
+      "featuredOrder": null,
       "visible": true
     }
   ]
